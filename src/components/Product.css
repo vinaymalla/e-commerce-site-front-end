@@ -1,0 +1,122 @@
+/* Products.css */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .view-cart-button {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  .btn-outline-success {
+    transition: background-color 0.3s;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: rgb(247, 164, 11); /* Keep the outline style on hover */
+  }
+  
+  .btn-success {
+    background-color: green;
+    color: rgb(4, 80, 27);
+  }
